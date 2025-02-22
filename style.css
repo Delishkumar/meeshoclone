@@ -27,8 +27,6 @@ body{
     align-items: center;
     padding: 10px;
     background-color: rgb(173, 173, 207);
-    position: sticky;
-    top: 0;
     box-shadow: rgba(169, 223, 228, 0.35) 0px 5px 15px; 
 
 }
@@ -210,9 +208,9 @@ span{
 }
 
 .information{
-    margin: 10px;
+
     background-color: antiquewhite;
-    padding: 10px;
+    padding: 15px;
     display: grid;
     gap: 10px;
 }
@@ -222,15 +220,15 @@ span{
 }
 .inf-head{
 
-    text-align: center;
-    padding: 5px;
+
+   margin: 10px;
     padding: 10px;
     
 }
 .playstore{
     display: flex;
     gap: 10px;
-    justify-content: center;
+    
 
 }
 .play{
@@ -248,7 +246,7 @@ span{
     margin: 10px;
     margin-top: 10px;
     display: flex;
-    justify-content: space-evenly;
+    gap: 10px;
     
 }
 .notice-text{
@@ -270,15 +268,15 @@ span{
     }
 /* dashboard */
  .dash{
-display: none;
+display: flex;
 justify-content: space-around;
 font-size: 25px;
 padding: 10px;
 background-color: aliceblue;
 position: fixed;
-bottom: 70px;
+bottom: 0px;
 z-index: 30;
-width: 310px;
+width: 100%;
 }
 
 .dash:active{
@@ -303,6 +301,7 @@ background-color: rgb(243, 183, 17);
  display: flex;
  gap: 20px;
  align-items: center;
+ cursor: pointer;
 }
 .nav-head{
     display: none;
@@ -363,6 +362,10 @@ background-color: rgb(243, 183, 17);
 }
 .locationend{
     display: grid;
+    justify-content: center;
+    gap: 20px;
+}
+.information{
     justify-content: center;
 }
 }
