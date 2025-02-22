@@ -21,12 +21,17 @@ body{
     padding: 5px;
     border-radius: 10px;
     border: 1px solid transparent;
+    
 }
 .nav-head{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
+    background-color: rgb(173, 173, 207);
+   position: sticky;
+   top: 0;
+   box-shadow: rgba(236, 223, 223, 0.35) 0px 5px 15px;
 }
 span{
     font-size: 20px;
@@ -55,7 +60,8 @@ span{
     align-items: center;
     gap: 10px;
     padding: 10px;
-    width: 330px;
+    width: 300px;
+   
 }
 .search{
     display: grid;
@@ -74,12 +80,15 @@ span{
 .adrees{
     background-color: antiquewhite;
     padding: 20px;
+    display: flex;
+    gap: 8px;
 }
 .gcontainer{
     display: flex;
     gap: 10px;
     margin: 10px;
     overflow: auto;
+    outline: none;
     
     
 }
@@ -91,8 +100,11 @@ span{
 }
 /* landscope */
 .landscope{
-    width: 330px;
+    display: grid;
+    justify-content: center;
+    width: 310px;
     margin: 10px;
+    margin-left: 15px;
     
    
 }
@@ -103,13 +115,13 @@ span{
 }
 /* daily deals */
 .dailydeals{
-    margin: 10px;
+    margin: 15px;
 }
 .dailydeals-head{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 15px;
 }
 .dailydeals-container{
      display: grid;
@@ -118,7 +130,7 @@ span{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    
+
     
 }
 .dailydeals-container img{
@@ -127,3 +139,143 @@ span{
 .dailydeals-head p{
     color: rgb(226, 43, 165);
 }
+/* lowprice */
+.lowprice{
+    margin: 15px;
+}
+.lowprice-imgs{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+
+}
+.lowprice-imgs img{
+    width: 70px;
+}
+/* product */
+.product{
+    margin: 1px;
+}
+.product-list{
+    display: flex;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    background-color: aliceblue;
+    width: 90%;
+    z-index: 20;
+    
+}
+.product-list p{
+    border: solid silver 1px;
+    padding: 8px;
+    flex-grow: 1;
+    text-align: center;
+}
+.Products-container{
+    margin: 15px;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   justify-content: space-around;
+   gap: 10px;
+   
+}
+.container-dress{
+  
+  width: 150px;
+
+}
+.container-dress img{
+    width: 100%;
+    height: 70%;
+}
+.container-dress p{
+    font-size: 10px;
+    padding: 2px;
+}
+.rating{
+    display: flex;
+
+}
+.rating-1{
+    background-color: green; 
+    color: white;
+     padding: 3px; 
+    border-radius: 4px;
+}
+.likebutn{
+   
+    position: relative;
+    left: 125px;
+    top: 40px;
+  
+    
+}
+.information{
+    margin: 10px;
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+}
+.inf-head{
+
+    text-align: center;
+    padding: 5px;
+    padding: 10px;
+    
+}
+.playstore{
+    display: flex;
+    justify-content: space-around;
+
+}
+.play{
+   display: flex;
+   gap: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.notice{
+    margin: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.notice-text{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.smlogo{
+    display: flex;
+    margin-top: 10px;
+    font-size: 20px;
+    gap: 15px;
+}
+.contactus{
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    width: 200px;
+}
+/* dashboard */
+.dash{
+display: flex;
+justify-content: space-around;
+font-size: 25px;
+padding: 10px;
+background-color: aliceblue;
+position: fixed;
+bottom: 0;
+width: 100%;
+z-index: 30;
+}
+
+.dash:active{
+background-color: rgb(243, 183, 17);}
