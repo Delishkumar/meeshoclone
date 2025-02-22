@@ -1,7 +1,7 @@
-*{
+ *{
     margin: 0;
     padding: 0;
-}
+ }
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 13px;
@@ -87,11 +87,12 @@ span{
     display: flex;
     gap: 10px;
     margin: 10px;
-    overflow: auto;
-    outline: none;
-    
-    
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    scrollbar-width: none;    
 }
+
 .container-1 img{ 
 
     width: 80px;
@@ -147,6 +148,10 @@ span{
     display: flex;
     gap: 10px;
     margin-top: 10px;
+     overflow-x: auto;
+     scroll-behavior: smooth;
+     white-space: nowrap;
+     scrollbar-width: none;
 
 }
 .lowprice-imgs img{
@@ -272,10 +277,11 @@ font-size: 25px;
 padding: 10px;
 background-color: aliceblue;
 position: fixed;
-bottom: 0;
-width: 100%;
+bottom: 70px;
 z-index: 30;
+width: 310px;
 }
 
 .dash:active{
-background-color: rgb(243, 183, 17);}
+background-color: rgb(243, 183, 17);
+}
