@@ -22,12 +22,12 @@ body{
 }
 
 .nav-head{
-    display: flex;
+    display: flex;;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     background-color: rgb(173, 173, 207);
-    box-shadow: rgba(169, 223, 228, 0.35) 0px 5px 15px; 
+    box-shadow: rgba(169, 223, 228, 0.35) 0px 5px 15px;
 
 }
 span{
@@ -49,6 +49,42 @@ span{
     display: flex;
     gap: 20px;
     align-items: center; 
+}
+.slidelists{
+   display: inline-block;
+   position: absolute;
+   width: 50%;
+   top: 0;
+   z-index: 50;
+   height: 100vh;
+   transition-duration: 1s;
+   transform: translateX(-250px);
+   
+
+}
+.slidelist{
+    background-color: #ff4f91;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    width: 70%;
+    height: 100%;
+    padding-left: 50px;
+    
+  
+    
+}
+.slidelist a{
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+   
+}
+.slidelist p{
+    text-align: end;
+    
 }
 /* search */
 .searchbox{
@@ -141,11 +177,11 @@ span{
 }
 /* lowprice */
 .lowprice{
-    margin: 15px;
+    margin: 10px;
 }
 .lowprice-imgs{
     display: flex;
-    gap: 10px;
+    gap: 5px;
     margin-top: 10px;
     overflow-x: auto;
     scroll-behavior: smooth;
@@ -164,9 +200,9 @@ span{
     display: flex;
     padding: 10px;
     background-color: aliceblue;
-    
-    
-    
+    position: sticky;
+    top: 0px;
+    z-index: 40;  
 }
 .product-list p{
     border: solid silver 1px;
@@ -269,14 +305,14 @@ span{
 /* dashboard */
  .dash{
 display: flex;
-justify-content: space-around;
+justify-content: space-evenly;
 font-size: 25px;
 padding: 10px;
 background-color: aliceblue;
 position: fixed;
 bottom: 0px;
 z-index: 30;
-width: 90%;
+width: 100%;
 }
 .dash a{
     transition: 0.02s;
@@ -291,20 +327,23 @@ text-align: center;
 }
 /* profile */
 .profile {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    background-color: #f7a6c3;
     height: 100vh;
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+   
 }
 
 .profile-container {
     background: white;
     padding: 25px;
-    width: 350px;
+    width: 240px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .profile-container h2 {
@@ -326,7 +365,7 @@ text-align: center;
 }
 
 .profile-group input {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     border: 2px solid #ddd;
     border-radius: 5px;
@@ -377,8 +416,8 @@ text-align: center;
     display: grid;
     background: white;
     padding: 25px;
-    width: 100%;
-    max-width: 400px;
+    width: 90%;
+    min-width: 310px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
@@ -422,7 +461,7 @@ text-align: center;
 }
 
 .btn {
-    width: 100%;
+    width: 50%;
     padding: 12px;
     background: #0072ff;
     border: none;
@@ -436,6 +475,7 @@ text-align: center;
 .btn:hover {
     background: #005bb5;
 }
+
 
 /* Responsive Design */
 
@@ -456,11 +496,27 @@ text-align: center;
     span{
         font-size: 35px;
     }
+    .slidelists{
+        display: none;
+    }
 .menulist{
  display: flex;
- gap: 20px;
+ gap: 30px;
  align-items: center;
  cursor: pointer;
+ 
+}
+.menulist a{
+    text-decoration: none;
+}
+.menulist a:hover,.menulist a.active{
+    background-color: #0072ff;
+    padding: 10px;
+    border-radius: 18px;
+}
+.shopcard{
+    display: flex;
+    gap: 20px;
 }
 .nav-head{
     display: none;
@@ -468,10 +524,19 @@ text-align: center;
 .navbar-md{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 15px;
-    background-color: rgb(190, 194, 196);
+    background-color: #ddd;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: fixed;
+    top: 0px;
+    z-index: 50;
+    width: 100%;
 }
+.searchbox{
+    width: 90%;
+}
+
 
 .container-1 img{ 
 
@@ -486,6 +551,9 @@ text-align: center;
     gap: 10px;
     overflow: hidden; 
     justify-content: space-between;  
+}
+.product-list{
+    position: static;
 }
 
 
@@ -513,6 +581,8 @@ text-align: center;
    grid-template-columns: 1fr 1fr 1fr 1fr;
    
 }
+
+
 .dash{
     display: none;
 }
@@ -527,4 +597,13 @@ text-align: center;
 .information{
     justify-content: center;
 }
+.profile{
+width: 1200px;
+}
+.profile-container{
+ 
+width: 300px;
+margin-top: 25px;
+}
+
 }

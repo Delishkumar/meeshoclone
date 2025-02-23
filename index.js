@@ -14,4 +14,21 @@ document.querySelectorAll(".dash a").forEach(link => {
         })
     })
 })
-    
+    // slidemenu//
+    document.getElementById("cut").addEventListener("click",function(){
+        document.querySelector(".slidelists").style.display="none"
+    })
+
+    document.getElementById("menubutn").addEventListener("click",function(){
+        document.querySelector(".slidelists").style.transform= "translateX(-10px)";
+    })
+
+    //md screen active links//
+    document.querySelectorAll(".menulist a").forEach(links => {
+        links.addEventListener("click",function(){
+            document.querySelectorAll(".menulist a").forEach(b =>{
+                b.classList.remove("active")
+               this.classList.add("active")
+            })
+        })
+    })
